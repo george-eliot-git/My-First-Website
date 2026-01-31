@@ -132,6 +132,35 @@ section {
     line-height: 1.6;
 }
 
+.project-card h3 a {
+    color: #6366f1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-card h3 a:hover {
+    color: #8b5cf6;
+    text-decoration: underline;
+}
+
+.repo-meta {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #718096;
+}
+
+.repo-language {
+    font-weight: 600;
+}
+
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #718096;
+}
+
 /* Contact Section */
 .contact {
     background: #f8fafc;
