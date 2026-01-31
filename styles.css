@@ -177,6 +177,23 @@ footer p {
     color: #a0aec0;
 }
 
+.footer-time {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Page Load Animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     section {
@@ -219,7 +236,13 @@ footer p {
     }
 
     .project-card,
-    .contact a {
+    .contact a,
+    section {
         transition: none;
+    }
+
+    section {
+        opacity: 1;
+        transform: none;
     }
 }
